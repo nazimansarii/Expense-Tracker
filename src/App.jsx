@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import ExpenseForm from "./components/ExpenseForm";
 import "./App.css";
 import ExpenseTable from "./components/ExpenseTable";
-import expeneseData from "./expeneseData";
-import { useLocalStorage } from "./hooks/UseLocalStorage";
+import useLocalStorage from './hooks/UseLocalStorage';
 
 export default function App() {
   const [expenses, setExpenses] = useLocalStorage("expenses", '');
